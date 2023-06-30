@@ -22,7 +22,7 @@ serde = ["deadpool/serde", "serde_1"]
 
 [dependencies]
 deadpool = { path = "../", version = "0.9.5", default-features = false, features = ["managed"] }
-redis = { version = "0.23.0", default-features = false, features = ["aio"] }
+redis = { version = "0.23.0", default-features = false, features = ["aio", "json", "cluster-async", "serde_json", "tokio-comp", "ahash"] }
 redis_cluster_async="0.8.0"
 serde_1 = { package = "serde", version = "1.0.145", features = ["derive"], optional = true }
 
